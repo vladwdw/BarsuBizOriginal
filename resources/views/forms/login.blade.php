@@ -27,7 +27,7 @@
         <!--Left Box-->
         <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" >
             <div class="featured-image mb-3">
-                <img src="assets/img/features-4.png" class="img-fluid"alt="" style="width:500px; ">
+                <img src="{{asset('assets/img/features-4.png')}}" class="img-fluid"alt="" style="width:500px; ">
             </div>
         
         </div>
@@ -38,7 +38,7 @@
                 
                 <div class="header-text mb-4">
                     <div class="mb-5 ms-auto">
-                <img src="assets/img/logo.png" class="logo" width="210px">
+                <img src="{{asset('assets/img/logo.png')}}" class="logo" width="210px">
                 </div>
                     <h2>Добро пожаловать</h2>
                     <p>Вход в личный кабинет</p>
