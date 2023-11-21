@@ -45,7 +45,7 @@ Route::get('/register',[MainController::class, 'registerPage'])->name('registerP
 Route::post('/submit-register', [RegisterController::class,'register']);
 Route::post('/login',[AuthController::class,'login'])->name('login');
 Route::post('/logout',[AuthController::class,'logout'])->name('logout');
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth'])->group(function () {
 Route::get('/cabinet',[MainController::class, 'cabinet'])->name('cabinet');
 Route::get('/form1',[MainController::class, 'form1'])->name('form1');
 Route::get('/form11/{name}/{id}',[MainController::class, 'form11'])->name('form11');
